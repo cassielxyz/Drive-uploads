@@ -1,0 +1,22 @@
+{
+  "name": "high-speed-file-uploader",
+  "version": "1.0.0",
+  "description": "Production-ready web application for high-speed file uploads with chunked, resumable uploads",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "test": "cd client && npm test && cd ../server && npm test",
+    "docker:build": "docker build -t high-speed-uploader .",
+    "docker:run": "docker run -p 3000:3000 -p 5000:5000 high-speed-uploader"
+  },
+  "keywords": ["file-upload", "chunked-upload", "resumable-upload", "cloud-storage", "performance"],
+  "author": "High Speed Uploader",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
