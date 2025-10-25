@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * Performance test script for high-speed file uploader
- * Tests upload performance with different configurations
- */
 
 import fs from 'fs';
 import path from 'path';
