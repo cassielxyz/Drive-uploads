@@ -1,4 +1,4 @@
-# High Speed File Uploader
+...# High Speed File Uploader
 
 A production-ready web application for uploading large files with maximum speed and reliability. Features chunked, resumable uploads with parallel processing, adaptive tuning, and support for multiple cloud storage providers.
 
